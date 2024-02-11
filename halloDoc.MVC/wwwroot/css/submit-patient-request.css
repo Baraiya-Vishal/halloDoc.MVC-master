@@ -1,0 +1,112 @@
+.btn-1{
+    background: rgba(194, 170, 252, 0.13);
+    border-color:  rgb(72, 13, 99);
+    color:  rgb(72, 13, 99);
+    font-weight:600;
+    font-size:large;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: start;
+    height: 50px;
+    width: 250px;
+}
+.btn-2{
+   
+    background:  rgba(128, 226, 250, 0.1);
+      border-color: rgb(37, 153, 182);
+    color: rgb(37, 153, 182);
+    font-weight:600;
+    font-size:large;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: start;
+    height: 50px;
+    width: 250px;
+}
+.btn-3{
+    background: rgba(108, 255, 108, 0.192);
+    border-color: rgb(14, 85, 7);
+    color:  rgb(14, 85, 7);
+    font-weight:600;
+    font-size:large;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: start;
+    height: 50px;
+    width: 250px;
+}
+.btn-4{
+    background: rgba(255, 132, 239, 0.199);
+    /* background-color: hwb(233 82% 0%); */
+    /* opacity: 0.4; */
+    border-color: rgb(120, 5, 114);
+    color:  rgb(120, 5, 114);
+    font-weight:600;
+    font-size:large;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: start;
+    height: 50px;
+    width: 250px;
+}
+
+.d-btn-1{
+    background: rgb(125 94 202 / 13%);
+    border-color: rgb(191 64 250);
+    color: rgb(209 109 255);
+}
+.d-btn-2{
+    background: rgb(25 198 240 / 10%);
+    border-color: rgb(71 218 255);
+    color: rgb(72 218 255);
+}
+
+.d-btn-3{
+    background: rgb(65 202 65 / 19%);
+    border-color: rgb(49 253 29);
+    color: rgb(79 255 61);
+}
+
+.d-btn-4{
+    background: rgb(162 46 147 / 20%);
+    border-color: rgb(255 20 243);
+    color: rgb(255 75 246);
+}
+
+.btn-1:hover{
+    background-color:  rgb(72, 13, 99) !important;
+    color:white !important;
+}
+.btn-2:hover {
+    background-color: rgb(37, 153, 182) !important;
+    color: white !important;
+}
+.btn-3:hover {
+    background-color: rgb(14, 85, 7) !important;
+    color: white !important;
+}
+.btn-4:hover {
+    background-color: rgb(120, 5, 114) !important;
+    color: white !important;
+}
+.btn-back{
+    right: 15%;
+    margin-left: 120px;
+}
+.shadow
+{
+  box-shadow: 10px 0 5px -2px #888;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .btn-back{
+        right: 10px;
+    }
+   }
+
+   @media only screen and (max-width: 425px) {
+    .btn-1, .btn-2, .btn-3, .btn-4{
+        width: 300px;
+        border-radius: 0px;
+        text-align: center;
+    }
+   }

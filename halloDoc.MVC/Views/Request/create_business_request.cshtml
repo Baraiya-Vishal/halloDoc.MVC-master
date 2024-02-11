@@ -1,0 +1,155 @@
+@{
+    ViewData["Title"] = "Create-family-friend-request";
+}
+<link rel="stylesheet" href="~/css/create-patient-request.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<div class="container-fluid">
+
+
+
+    <div class="container-fluid bg-grey pb-3 pt-3">
+        <div class="container bg-white">
+
+            <div class="row text-end bg-grey mb-3">
+                <div class="">
+                    <button type="button"
+                        class="btn btn-light   bg-white p-2 me-2 mb-3 btn-back btn-border-back bg-transparent p-0">
+                        <a asp-area="" asp-controller="Request" asp-action="Submit_patient_request">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="myfill" height="16" width="12"
+                                viewBox="0 0 384 512">
+                                <path class="text-theme"
+                                    d="M380.6 81.7c7.9 15.8 1.5 35-14.3 42.9L103.6 256 366.3 387.4c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3l-320-160C6.8 279.2 0 268.1 0 256s6.8-23.2 17.7-28.6l320-160c15.8-7.9 35-1.5 42.9 14.3z" />
+                            </svg>
+                            <span class="text-theme bg-transparent">Back</span>
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <form action="#">
+            <div class="row bg-white mb-4">
+
+                <div class="myheading mb-3">Business Information</div>
+              
+                <div class="form-floating mb-3 col-12 col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" class="form-control" id="b-fristname" placeholder="">
+                    <label class="ms-3" for="b-fristname"> Your First Name</label>
+                </div>
+                <div class="form-floating mb-3 col-12 col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" class="form-control" id="b-lastname" placeholder="">
+                    <label class="ms-3" for="b-lastname"> Your Last Name</label>
+                </div>
+                
+                <div class="number-input mb-3 col-6 col-12 col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" class="form-control" id="b-phone" placeholder="9734324256">
+                  </div>
+                 
+                <div class="form-floating mb-3 col-12 col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
+                    <input type="text" class="form-control" id="b-email" placeholder="your email">
+                    <label class="ms-3" for="b-email">Email</label>
+                </div>
+               
+                <div class="form-floating mb-3 col-12 col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" class="form-control" id="b-hotel" placeholder="">
+                    <label class="ms-3" for="b-hotel"> Business / Property Name </label>
+                </div>
+
+                <div class="form-floating mb-3 col-12 col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
+                    <input type="text" class="form-control" id="b-case" placeholder="your email">
+                    <label class="ms-3" for="b-case">Case Number (Optional)</label>
+                </div>
+
+            </div>
+               <div class="row bg-white mb-4">
+
+                <div class="myheading mb-3">Patient Information</div>
+                <div class="form-group form-floating mb-3">
+
+                    <textarea class="form-control" rows="3" style="resize:none ;overflow: hidden; height: 100px;"
+                        id="Symptoms" placeholder="What's up?" required></textarea>
+                    <label class="ms-3" for="Symptoms">Enter Brief Details Of Symptoms(Optional)</label>
+                </div>
+                <div class="form-floating mb-3 col-12 col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" class="form-control" id="fristname" placeholder="">
+                    <label class="ms-3" for="fristname">First Name</label>
+                </div>
+                <div class="form-floating mb-3 col-12 col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" class="form-control" id="lastname" placeholder="">
+                    <label class="ms-3" for="lastname">Last Name</label>
+                </div>
+
+                <div class="form-floating mb-3 col-12 col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <input type="date" class="form-control" id="birthdate" placeholder="">
+                    <label class="ms-3" for="birthdate">Birth Date</label>
+                </div>
+            </div>
+
+            <div class="row bg-white mb-4 ">
+                <div class="myheading mb-3">Patient Contact Information</div>
+                <div class="form-floating mb-3 col-12 col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
+                    <input type="text" class="form-control" id="email" placeholder="">
+                    <label class="ms-3" for="email">email</label>
+                </div>
+                <div class="number-input mb-3 col-6 col-12 col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" class="form-control" id="phone" placeholder="9734324256">
+                  </div>
+            </div>
+
+            <div class="row bg-white mb-4">
+
+                <div class="myheading mb-3">Patient Location</div>
+                <div class="form-floating mb-3 col-12 col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" class="form-control" id="street" placeholder="">
+                    <label class="ms-3" for="street">Street</label>
+                </div>
+                <div class="form-floating mb-3 col-12 col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" class="form-control" id="city" placeholder="">
+                    <label class="ms-3" for="city">City</label>
+                </div>
+
+                <div class="form-floating mb-3 col-12 col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" class="form-control" id="state" placeholder="">
+                    <label class="ms-3" for="state">State</label>
+                </div>
+                <div class="form-floating mb-3 col-12 col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" class="form-control" id="zip-code" placeholder="">
+                    <label class="ms-3" for="zip-code">Zip Code</label>
+                </div>
+                 
+                <div class="form-floating mb-3 col-12 col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" class="form-control" id="room" placeholder="">
+                    <label class="ms-3" for="room">Room # / Suite (optional)</label>
+                </div>
+            </div>
+
+            <div class="row bg-white mb-4">
+
+                <div class="myheading mb-3">Patient Location</div>
+                 
+                <div class="form-floating mb-3 col-12 col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" class="form-control" id="room" placeholder="">
+                    <label class="ms-3" for="room">Room # / Suite (optional)</label>
+                </div>
+            </div>
+
+
+             
+            <div class="row bg-white text-end mb-5">
+
+                <div class="patient-request-form mb-3">
+                    <button type="submit" class="submit p-2 h-100" value="Submit">Submit</button>
+                    <button type="reset" class="cancel p-2 ms-3 h-100" value="reset">Cancel</button>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+
+
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="~/js/create-business-request.js"></script>
+<script src="~/js/dark-ceate-patient-request.js"></script>
+
+  

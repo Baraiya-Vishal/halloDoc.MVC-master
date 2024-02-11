@@ -1,0 +1,126 @@
+.bg-grey{
+    background-color: #f7f3f3;
+}
+
+
+.mode {
+    width: 30px;
+    height: 30px;
+    color: rgb(47, 155, 146);
+    border: 1px solid rgb(47, 155, 146);
+    border-radius: 5px;
+}
+
+
+.d-bg-white{
+    background-color: #212529!important;
+}
+.text-theme{
+    color: rgb(37, 153, 182);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(37, 153, 182);
+}
+.text-2{
+    color:rgb(37, 37, 37);
+}
+
+.myfill{
+    fill: rgb(37, 153, 182);
+}
+.mybtn{
+    background-color: rgb(37, 153, 182);
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: rgb(37, 153, 182);
+    background: transparent;
+    border-color: rgb(37, 153, 182);
+    outline: none;
+    box-shadow: none;
+  }
+
+  .btn:active ,.btn:hover{
+    color: var(--bs-btn-active-color);
+    background-color: rgb(27, 98, 117) !important;
+    border-color: var(--bs-btn-active-border-color);
+}
+
+.form-floating>.form-control:focus~label{
+    color: rgb(37, 153, 182);
+}
+.form-floating>.form-control:not(:placeholder-shown)~label::after{
+    background-color: transparent !important;
+}
+  .form-floating>.form-control:focus~label::after{
+    background-color: transparent !important ;
+    color: red !important;
+  }
+
+  label{
+    color: grey;
+  }
+
+.submit{
+    border: 1px solid rgb(37, 153, 182);
+    color: white;
+    font-family: sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 90px;
+	background-color:rgb(37, 153, 182) ;
+}
+
+.cancel{ 
+    background-color: white;
+    border: 1px solid rgb(37, 153, 182);
+   color:rgb(37, 153, 182);
+   border-radius: 5px;
+   width: 90px;
+}
+
+.btn-border-back{
+    border: 1px solid rgb(37, 153, 182);
+   
+}
+
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.d-text-2{
+    color: white;
+}
+
+.d-form-control {
+    border: 1px solid white;
+    background-color: #212529;
+}
+
+
+@media only screen and (max-width: 425px) {
+    .logo{
+        display: none;
+    }
+    .myform{
+        margin-top: 50px;
+    }
+   }
+
+
+   @media (prefers-color-scheme: dark) {
+    .form-control{
+        border: 1px solid white !important;
+    }
+   }
+
+   @media (prefers-color-scheme: dark) {
+    .text-2 {
+        color: rgb(252, 247, 247);
+    }
+  }

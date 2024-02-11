@@ -1,0 +1,76 @@
+
+.mode {
+    width: 30px;
+    height: 30px;
+    color: rgb(47, 155, 146);
+    border: 1px solid rgb(47, 155, 146);
+    border-radius: 5px;
+}
+/* .doc-img{
+    width:200px;
+} */
+.myheading{
+    font-size: 30px;
+    font-weight:500;
+    color: black;
+    margin-left: 15px;
+}
+
+.input-area{
+    height: 50px;
+    
+        background: transparent;
+        background-image: url(Images/textBg.jpg)
+       }
+
+.myinput{
+    height: 50px;
+}
+.docform{
+    width: 50%;
+}
+.myback{
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.3;
+    z-index: -1;
+}
+.main{
+    /* background-image: url("/images/login-img.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100vh ;
+    position: relative;
+    background-position: center; */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+.sep{
+    margin: 0px 15px;
+    color: white;
+}
+
+
+
+  .form-control:focus + .form-label {
+    color: red;
+  }
+
+@media only screen and (max-width: 768px) {
+   .myback{
+    width: 100vw;
+    left: 0%;   
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sep{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+ }
+
+@media screen and (max-height: 600px) {
+    .doc-img{
+        height:75px;
+    }
+}

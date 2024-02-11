@@ -1,0 +1,88 @@
+/* input#phone {
+    height: 100%;
+}
+input#f-phone {
+    height: 100%;
+}
+input#c-phone {
+    height: 100%;
+} */
+
+.body-g {
+    background-color: #f7f3f3 !important;
+}
+
+.iti {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+.iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
+    padding-right: 6px;
+    padding-left: 52px;
+    margin-left: 0;
+    height: 58px;
+    /* background-color: #212529;  */
+}
+
+.iti__country-list {
+    z-index: 5;
+}
+/* .iti.iti--allow-dropdown {
+    height: 100%;
+    width: 100%;
+} */
+
+/* .iti-mobile .iti__country-list {
+    max-height: none;}
+
+.select{
+    height: 50px;
+} */
+.myupload-lable{
+    width: 100px;
+    color: white;
+    font-family: sans-serif;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+	background-color:rgb(37, 153, 182) ;
+}
+
+.patient-request-form{
+    height: 50px;
+}
+
+
+.myshadow
+{
+    /* box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3); */
+  /* box-shadow: 10px 0 5px -2px #888; */
+}
+
+
+@media only screen and (max-width: 425px) {
+ .myheading{
+    font-size: 15px;
+ }
+ .myupload-lable{
+    width: 50px;
+ }
+ /* .iti.iti--allow-dropdown {
+    height: 60px;
+    
+} */
+ label{
+    font-size: 13px;
+  
+ }
+   }
+
+   @media only screen and (max-width: 575px) {
+    /* .iti.iti--allow-dropdown {
+       height: 60px;
+       
+   } */
+}

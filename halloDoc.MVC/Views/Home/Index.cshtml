@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_loginLayout.cshtml";
+}
+
+<link rel="stylesheet" href="~/css/login.css">
+<link rel="stylesheet" href="~/css/patient-request.css">
+
+<div class = "align-items-center position-relative d-flex justify-content-between flex-column h-100">
+
+
+<div class="text-center ">
+    <div class=" mb-3">
+        <img class="doc-img" src="~/images/logo-PhotoRoom.png-PhotoRoom.png" alt="logo">
+    </div>
+
+</div>
+    <div class="new-patient w-100 d-flex align-items-center justify-content-center  h-25">
+     <div class="h-100 w-50">
+    <form class="submit-request h-50">
+                <a asp-area="" asp-controller="Request" asp-action="Submit_patient_request" class="h-100">
+            <button type="button"
+                    class="btn btn-primary form-control primary-box text-white border h-75  border-white mb-4">
+                Submit a
+                Request
+            </button>
+        </a>
+    </form>
+
+    <form class="register-patient h-50">
+        <a asp-area="" asp-controller="Home" asp-action="Patient_login" class="h-100">
+            <button type="button"
+                    class="btn btn-primary h-75 form-control btn-register seconadry-box text-white border  border-white mb-4">
+                Registered
+                patient
+            </button>
+        </a>
+    </form>
+ 
+</div>
+
+</div>
+ <div>
+
+ </div>
+</div>
